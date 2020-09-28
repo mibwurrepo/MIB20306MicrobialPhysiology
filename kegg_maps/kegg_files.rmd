@@ -1,0 +1,1 @@
+Metabolic maps for _Intestinimonas butyricuproducens_ downloaded from KEGG: Kyoto Encyclopedia of Genes and Genomes https://www.genome.jp/kegg/
