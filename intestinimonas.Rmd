@@ -5,7 +5,7 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
-    source_code: https://github.com/microsud/TeachingMIB20306
+    source_code: https://github.com/mibwurrepo/MIB20306MicrobialPhysiology
     theme: lumen
 ---
 
@@ -395,14 +395,14 @@ output$Volcano <- renderPlot({
                                                       x = 'log2FoldChange',
                                                       y = 'p.val',
                                                       FCcutoff = input$Lfc,
+                                                      pCutoff = input$alpha,
                                                       cutoffLineType = 'twodash',
                                                       cutoffLineWidth = 0.8,
-                                                      transcriptPointSize = 1.5,
-                                                      transcriptLabSize = 4.0,
+                                                      #transcriptPointSize = 1.5,
+                                                      #transcriptLabSize = 4.0,
                                                       colAlpha = 1,
-                                                      #DrawConnectors= T,
-                                                      legend=c('NS','Log (base 2) fold-change','adj.P value',
-                                                               'adj.P value & Log (base 2) fold-change'),
+                                                      #legend=c('NS','Log (base 2) fold-change','adj.P value',
+                                                      #         'adj.P value & Log (base 2) fold-change'),
                                                       legendPosition = 'right',
                                                       legendLabSize = 12,
                                                       legendIconSize = 5.0)
